@@ -1,0 +1,80 @@
+<html>
+<head>
+<script type = "text/javascript">
+	/*
+	function person(name, age) {
+		this.name = name;
+		this.age = age;
+		//no "()" for yearsLeft, this line delcear that yearsLeft is a memeber function for person object
+		this.yearUntilRetire = yearsLeft;
+	}
+
+	function yearsLeft() {
+		var years = 65 - this.age;
+		return years;
+	}
+	var bucky = new person("Bucky Roberts", 24);
+	var taylor = new person("Taylor Swift", 20);
+	*/
+
+	/*
+	// object initializor
+	bucky = {name:"Bucky Roberts", age:24};
+	*/
+</script>	
+</head>
+<!--
+<body onLoad = "alert('Your website is loaded!');">
+-->
+
+<!--
+22 event handler
+<form>
+	<input type = "button" value = "touch me" onClick = "alert('ahh!'); alert('twice!');"/>
+</form>
+-->
+
+<!--
+23 onMouseOver
+<a href = "http://google.com" onMouseOut = "alert('game time!');">Hover over me!</a>
+-->
+
+<body>
+<script type = "text/javascript">
+/*
+//24 OOP
+	var tuna = "I am tuna fish!";
+	document.write(tuna.length);
+	document.write(bucky.name + "<br />");
+	document.write(taylor.age);
+*/
+/*
+// 27 function in Object
+	//document.write(bucky.name);
+	//yearUntilRetire is the member function of person class
+	document.write(taylor.yearUntilRetire());
+*/
+// 28, 29 Array
+	var people = new Array("Bucky", "Tommy", "Sarah", "Hanah", "Mikety");
+	document.write(people[4] + "<br/>");
+	people[0] = "the new boston";
+	document.write(people[0]);
+
+	var stuff = new Array();
+	stuff[0] = "Boston";
+	stuff[2] = 2;
+	document.write("<br/>" + stuff[0] + "<br/>");
+	document.write(stuff.length + "<br/>");
+
+	var chicks = new Array("Lisa", "Erin", "Jenna");
+	var level = people.concat(chicks);
+	document.write(level.length);
+</script>
+</body>
+</html>
+
+
+
+
+
+

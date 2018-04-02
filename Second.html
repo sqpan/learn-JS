@@ -21,7 +21,18 @@
 	// object initializor
 	bucky = {name:"Bucky Roberts", age:24};
 	*/
+
+<!-- 40 Form Validation-->
+	function validator(){
+		if(document.panForm.thebox.checked) {
+			alert("Yes. checked");
+		}
+		else {
+			alert("No. not checked!");
+		}
+	}
 </script>	
+
 </head>
 <!--
 <body onLoad = "alert('Your website is loaded!');">
@@ -55,6 +66,7 @@
 	document.write(taylor.yearUntilRetire());
 */
 // 28, 29 Array
+/*
 	var people = new Array("Bucky", "Tommy", "Sarah", "Hanah", "Mikety");
 	document.write(people[4] + "<br/>");
 	people[0] = "the new boston";
@@ -69,7 +81,114 @@
 	var chicks = new Array("Lisa", "Erin", "Jenna");
 	var level = people.concat(chicks);
 	document.write(level.length);
+*/
+// 31 join and pop
+/*
+var movies = new Array("Avaator", "Good Will Hunting", "Vanilla Sky", "Fight Club");
+var string1 = movies.join(" - ");
+document.write(string1);
+document.write(movies[3] + "<br />");
+movies.pop();
+document.write(movies[3]);
+*/
+
+// 32 reverse push sort
+
+/*
+var bp = new Array("head", "shoulder", "knees", "toes");
+bp.reverse();
+bp.push("tongue", "liver");
+bp.sort();
+document.write(bp);
+*/
+
+//33 promopt
+/*
+//var pie = prompt("Enter your name:", "");
+//document.write("Hello " + pie);
+var crap = new Array(3);
+for (i = 0; i < 3; i++) {
+	crap[i] = prompt("Add something to array: ", "");
+}
+var res = crap.join(", ");
+document.write(res);
+*/
+
+// 34 cool to print array
+/*
+var stuff = new Array("apples", "pears", "bacon", "tuna", "ham");
+stuff.sort();
+for (i = 0; i<stuff.length; i++) {
+	document.write(stuff[i] + "<br/>");
+}
+*/
+
+//35 Associative Arrays
+/*
+var bucky = new Array();
+bucky["color"] = "blue";
+bucky["Food"] = "hot pocket";
+document.write("buckys favorite food is " + bucky["Food"]);
+*/
+
+//36 Math 
+/*
+document.write(Math.PI + "<br/>");
+var n = prompt("Enter a number: ", "");
+var answer = Math.sqrt(n);
+alert("The square root of " + n + " is " + answer);  
+*/
+
+// 37 Date Object
+/*
+function doSomething(){
+	document.write("Tuna");
+}
+//setInterval("doSomething()", 1000);
+function printTime() {
+	var now = new Date();
+	var hours = now.getHours();
+	var mins = now.getMinutes();
+	var secs = now.getSeconds();
+	document.write(hours + ":" + mins + ":" + secs + "<br/>");
+}
+setInterval("printTime()", 1000);
+*/
+
+
 </script>
+<!--
+// 38 Accessing Forms
+<form>
+	Username: <input type = "text" />
+	Password: <input type = "password" />
+	<input type = "submit" value = "Submit!" />
+</form>	
+
+<script type="text/javascript">
+	var x = document.forms[0].length;
+	document.write(x);
+</script>
+-->
+
+<!-- 39 Access Form element
+<form name = "shaoForm">
+	Username: <input type="text" name= "username" />
+	Password: <input type="password" name= "password" />
+	<input type="submit" value ="Submit!">
+</form>
+
+<script type="text/javascript">
+	var x = document.shaoForm.username.name;
+	document.write(x);
+</script>
+-->
+
+<form name="panForm">
+	<input type="checkbox" name="thebox" />
+	<input type="button" value="Press me!" onClick="validator()" />
+
+</form>	
 </body>
 </html>
 

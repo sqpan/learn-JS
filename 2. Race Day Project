@@ -1,0 +1,23 @@
+// early adult register starts at 9:30 am and have a number bigger than 1000;
+// late adult register starts at 11:00 am and have a nunber less than 1000;
+// all youth start at 12:30 pm and have a number less than 1000;
+// those who are exactly 18 years old need to check with register desk
+
+let raceNumber = Math.floor(Math.random() * 1000);
+let isEarly = true;
+let age = 18;
+if (isEarly && age > 18) {
+  raceNumber += 1000;
+}
+if (isEarly && age > 18) {
+  console.log('Your start time is 9:30 am. Runner number ' + raceNumber);
+}
+else if (isEarly !== true && age > 18) {
+  console.log('Late adults run at 11:00 am. Runner number: ' + raceNumber);
+}
+else if (age < 18) {
+  console.log('Youth registrants run at 12:30 pm (regardless of registration)');
+}
+else {
+  console.log('Please check with registration desk.');
+}

@@ -1,0 +1,3 @@
+// Truthy and falsy statement
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let writingUtensil = tool || 'pen';
